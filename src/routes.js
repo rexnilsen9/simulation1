@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import ShelfA from './components/ShelfA/ShelfA';
-import ShelfB from './components/ShelfB/ShelfB';
-import ShelfC from './components/ShelfC/ShelfC';
-import ShelfD from './components/ShelfD/ShelfD';
+import ShelfA from './components/ShelfA';
+import ShelfB from './components/ShelfB';
+import ShelfC from './components/ShelfC';
+import ShelfD from './components/ShelfD';
 
 
 

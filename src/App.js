@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Switch } from 'react-router-dom';
 import routes from './routes'
+import Home from './components/home';
 
 import './reset.css';
 import './App.css';
@@ -12,19 +13,16 @@ class App extends Component {
       <div className="App">
         <header className='mainHeader'>
           <Link id='link' to='/'><h1>
-            <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/logo.png?raw=true" alt=""></img>
+            <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/logo.png?raw=true" alt="Shelfie Logo"></img>
             SHELFIE
-            </h1></Link>
+            </h1>
+          </Link><br />
         </header>
         <Switch>
-          <div className='linkwrapper'>
-            <Link id='link' to='/bins/A'>Shelf A</Link><br /><br/>
-            <Link id='link' to='/bins/B'>Shelf B</Link><br /><br/>
-            <Link id='link' to='./bins/C'>Shelf C</Link><br /><br/>
-            <Link id='link' to='./bins/D'>Shelf D</Link>
+          <div className='home'>
+            <Home />
           </div>
         </Switch>
-        {routes}
       </div>
     );
   }

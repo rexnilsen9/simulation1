@@ -23,5 +23,10 @@
   text-decoration: none;
   color: white;
   border-radius: 5%;
+  flex-direction: row;
+}
+
+.home {
+  padding: 20px;
 }
 
